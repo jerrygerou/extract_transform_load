@@ -170,7 +170,23 @@ Thank you for your interest and good luck!
 
 * User has at least Python 3.0 installed
 
-**Design**
+**Design / Approach**
+* Break each csv file into separate arrays for iteration over purchases and buckets
+* Logic through the hierarchy of how to bucket:
+  1) Publisher, Price, Duration
+  2) Publisher, '*', Duration
+  3) Publisher, Price, '*'
+  4) '*', Price, Duration
+  5) '*', '*', Duration
+  6) '*', Price, '*'
+  7) '*', '*', '*'
+* Create an empty dictionary to hold the resulted buckets and purchases, fill it with bucket keys
+* Create an empty list to keep track of which orders have been bucketed (preventing duplicate entries on duplicate buckets)
+* Loop through each purchase
+  * Using hierarchy, check the necessary keys (publisher, price, duration) in each purchase and compare to existing bucket keys in the dictionary
+  * If match is found, add purchase to that bucket AND add purchase to the list keeping track of orders that have been added
+  * Return dictionary
+* Format JSON file and output results
 
 **Other Notes**
 
