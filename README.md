@@ -168,6 +168,22 @@ Thank you for your interest and good luck!
 
 **Assumptions**
 
+* User has at least Python 3.0 installed
+
 **Design**
 
 **Other Notes**
+
+**Setup and Run**
+* Clone repo
+```
+git clone https://github.com/jerrygerou/extract_transform_load.git
+```
+* Go to repo folder to run
+```
+cd extract_transform_load
+```
+* Run the run.py file to generate the results file
+```
+python run.py
+```
