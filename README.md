@@ -1,11 +1,11 @@
 # extract-transform-load
 
-RedShelf Coding Challenge
+Coding Challenge
 ==========================
 
 *Problem*
 
-The RedShelf Business Intelligence Team has submitted a request for an ETL (Extract, Transform, Load) job and you
+The Business Intelligence Team has submitted a request for an ETL (Extract, Transform, Load) job and you
 are tasked with writing a program that will be used as part of the ETL task. The BI team needs
 to take historical textbook purchase data and separate it
 into some pre-defined buckets that will make it easier for them to generate their daily reports.
@@ -16,7 +16,7 @@ For this challenge you
 have been supplied with two files:
 
 * `purchase_data.csv`: A comma-separated sampling of historical book purchase data. The fields in this file are as follows:
-    * `order_id`: The RedShelf order number (eg. 7639) that is an unsigned 16-bit integer
+    * `order_id`: The order number (eg. 7639) that is an unsigned 16-bit integer
     * `isbn`: The ISBN13 of the book (eg. 9786141234567) that is always thirteen characters long but may not be a
     valid ISBN13 according to the ISO standard.
     * `publisher`: The publisher of the book (eg. Pearson)
